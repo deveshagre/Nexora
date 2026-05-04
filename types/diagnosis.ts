@@ -20,6 +20,7 @@ export type Question = {
 export type GoalSelection = {
   goal: Goal;
   careerTrack?: string;
+  mentorCategory?: "tech" | "non-tech";
 };
 
 export type AnswerMap = Record<string, string | number>;
