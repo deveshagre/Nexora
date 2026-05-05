@@ -34,9 +34,9 @@ export function ResultView() {
   if (!result || isLoadingReport) {
     return (
       <main className="grid min-h-screen place-items-center px-5">
-        <div className="w-full max-w-md rounded-xl border border-white/10 bg-nexore-card p-7 text-center shadow-soft">
-          <div className="mx-auto h-12 w-12 animate-spin rounded-full border-4 border-slate-700 border-t-nexore-accent" />
-          <h1 className="mt-6 text-2xl font-black text-nexore-text">Analyzing your skills...</h1>
+        <div className="w-full max-w-md rounded-xl border border-white/10 bg-nexora-card p-7 text-center shadow-soft">
+          <div className="mx-auto h-12 w-12 animate-spin rounded-full border-4 border-slate-700 border-t-nexora-accent" />
+          <h1 className="mt-6 text-2xl font-black text-nexora-text">Analyzing your skills...</h1>
           <p className="mt-3 leading-7 text-slate-300">Mapping your score, gaps, roadmap, and best-fit mentors.</p>
         </div>
       </main>
@@ -47,21 +47,21 @@ export function ResultView() {
     <main className="min-h-screen px-5 py-6">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <Link href="/" className="focus-ring rounded-md text-lg font-black text-nexore-text">
-            Nexore
+          <Link href="/" className="focus-ring rounded-md text-lg font-black text-nexora-text">
+            Nexora
           </Link>
           <Link
             href="/diagnosis/start"
-            className="focus-ring rounded-xl border border-white/10 bg-white/8 px-4 py-2 text-sm font-black text-nexore-text hover:border-nexore-accent/55 hover:bg-white/12"
+            className="focus-ring rounded-xl border border-white/10 bg-white/8 px-4 py-2 text-sm font-black text-nexora-text hover:border-nexora-accent/55 hover:bg-white/12"
           >
             Retake Diagnosis
           </Link>
         </div>
 
         <section className="pt-10">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexore-primary">Step 3 of 3</p>
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexora-primary">Step 3 of 3</p>
           <div className="mt-4 grid gap-5 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
-            <div className="rounded-xl border border-nexore-accent/24 bg-gradient-to-br from-nexore-card via-nexore-primary/34 to-nexore-accent/20 p-7 text-white shadow-soft">
+            <div className="rounded-xl border border-nexora-accent/24 bg-gradient-to-br from-nexora-card via-nexora-primary/34 to-nexora-accent/20 p-7 text-white shadow-soft">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-slate-300">
                 {goalLabels[result.goal.goal]}
                 {result.goal.careerTrack ? `: ${result.goal.careerTrack}` : ""}
@@ -91,10 +91,10 @@ export function ResultView() {
         <section className="py-12">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexore-primary">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexora-primary">
                 {mentorCategory === "tech" ? "Tech" : "Non-tech"} guidance
               </p>
-              <h2 className="mt-3 text-3xl font-black text-nexore-text">Recommended Mentors for You</h2>
+              <h2 className="mt-3 text-3xl font-black text-nexora-text">Recommended Mentors for You</h2>
             </div>
             <p className="max-w-md text-sm font-semibold leading-6 text-slate-400">
               Book one focused session to turn your weak areas into a clear practice plan.
@@ -116,8 +116,8 @@ export function ResultView() {
         <section className="py-12">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexore-primary">Roadmap</p>
-              <h2 className="mt-3 text-3xl font-black text-nexore-text">Your next 14 days</h2>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexora-primary">Roadmap</p>
+              <h2 className="mt-3 text-3xl font-black text-nexora-text">Your next 14 days</h2>
             </div>
             <p className="max-w-md text-sm font-semibold leading-6 text-slate-400">
               Built around your weakest areas first, then moved into proof of practice.
@@ -126,21 +126,21 @@ export function ResultView() {
 
           <div className="mt-7 grid gap-4 md:grid-cols-2">
             {roadmap.map((day) => (
-              <article key={day.day} className="rounded-xl border border-white/10 bg-nexore-card/88 p-5 shadow-soft transition hover:-translate-y-1 hover:border-nexore-accent/45">
+              <article key={day.day} className="rounded-xl border border-white/10 bg-nexora-card/88 p-5 shadow-soft transition hover:-translate-y-1 hover:border-nexora-accent/45">
                 <div className="flex items-center justify-between gap-4">
-                  <span className="rounded-xl bg-nexore-primary/24 px-3 py-2 text-sm font-black text-nexore-text">
+                  <span className="rounded-xl bg-nexora-primary/24 px-3 py-2 text-sm font-black text-nexora-text">
                     Day {day.day}
                   </span>
                   <a
                     href={day.resource}
                     target="_blank"
                     rel="noreferrer"
-                    className="focus-ring rounded-md text-sm font-black text-nexore-accent hover:text-nexore-secondary"
+                    className="focus-ring rounded-md text-sm font-black text-nexora-accent hover:text-nexora-secondary"
                   >
                     Resource
                   </a>
                 </div>
-                <h3 className="mt-4 text-xl font-black text-nexore-text">{day.title}</h3>
+                <h3 className="mt-4 text-xl font-black text-nexora-text">{day.title}</h3>
                 <p className="mt-3 leading-7 text-slate-300">{day.task}</p>
               </article>
             ))}
@@ -153,8 +153,8 @@ export function ResultView() {
 
 function ReportList({ title, items }: { title: string; items: string[] }) {
   return (
-    <section className="rounded-xl border border-white/10 bg-nexore-card/88 p-6 shadow-soft">
-      <h2 className="text-xl font-black text-nexore-text">{title}</h2>
+    <section className="rounded-xl border border-white/10 bg-nexora-card/88 p-6 shadow-soft">
+      <h2 className="text-xl font-black text-nexora-text">{title}</h2>
       <div className="mt-5 space-y-3">
         {items.map((item) => (
           <p key={item} className="rounded-xl bg-slate-950/32 p-4 text-sm font-semibold leading-6 text-slate-300">

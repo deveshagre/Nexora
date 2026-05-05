@@ -2,9 +2,9 @@
 
 import type { AnswerMap, DiagnosisResult, GoalSelection } from "@/types/diagnosis";
 
-const GOAL_KEY = "nexore.goal";
-const ANSWERS_KEY = "nexore.answers";
-const RESULT_KEY = "nexore.result";
+const GOAL_KEY = "nexora.goal";
+const ANSWERS_KEY = "nexora.answers";
+const RESULT_KEY = "nexora.result";
 
 function readJson<T>(key: string): T | null {
   if (typeof window === "undefined") {

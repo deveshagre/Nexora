@@ -7,8 +7,8 @@ export function Mentors() {
       <div className="mx-auto max-w-6xl">
         <div className="flex items-end justify-between gap-4">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexore-primary">Guidance</p>
-            <h2 className="mt-2 text-3xl font-black text-nexore-text">Top Mentors</h2>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexora-primary">Guidance</p>
+            <h2 className="mt-2 text-3xl font-black text-nexora-text">Top Mentors</h2>
           </div>
           <p className="hidden max-w-sm text-sm font-semibold leading-6 text-slate-400 sm:block">
             Book focused sessions after your diagnosis.

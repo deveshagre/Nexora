@@ -38,8 +38,8 @@ export default function LandingPage() {
         <section className="px-5 pb-10 pt-14 sm:pb-14 sm:pt-20">
           <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.2em] text-nexore-primary">AI skill diagnosis</p>
-              <h1 className="mt-4 text-6xl font-black tracking-normal text-nexore-text sm:text-7xl">Nexore</h1>
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-nexora-primary">AI skill diagnosis</p>
+              <h1 className="mt-4 text-6xl font-black tracking-normal text-nexora-text sm:text-7xl">Nexora</h1>
               <p className="mt-5 max-w-xl text-2xl font-black leading-9 text-slate-200">
                 Know your gaps. Own your path.
               </p>
@@ -50,14 +50,14 @@ export default function LandingPage() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/diagnosis/start"
-                  className="focus-ring inline-flex items-center justify-center gap-2 rounded-xl bg-nexore-accent px-6 py-3 text-base font-black text-slate-950 shadow-soft hover:-translate-y-0.5 hover:bg-nexore-secondary"
+                  className="focus-ring inline-flex items-center justify-center gap-2 rounded-xl bg-nexora-accent px-6 py-3 text-base font-black text-slate-950 shadow-soft hover:-translate-y-0.5 hover:bg-nexora-secondary"
                 >
                   Start Free Diagnosis
                   <Search className="h-5 w-5" />
                 </Link>
                 <a
                   href="#mentors"
-                  className="focus-ring inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/8 px-6 py-3 text-base font-black text-nexore-text hover:-translate-y-0.5 hover:border-nexore-accent/55 hover:bg-white/12"
+                  className="focus-ring inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/8 px-6 py-3 text-base font-black text-nexora-text hover:-translate-y-0.5 hover:border-nexora-accent/55 hover:bg-white/12"
                 >
                   Explore Mentors
                   <CalendarCheck className="h-5 w-5" />
@@ -66,13 +66,13 @@ export default function LandingPage() {
             </div>
 
             <Card className="p-5">
-              <div className="rounded-xl bg-gradient-to-br from-nexore-primary/28 via-nexore-card to-nexore-accent/18 p-5">
+              <div className="rounded-xl bg-gradient-to-br from-nexora-primary/28 via-nexora-card to-nexora-accent/18 p-5">
                 <div className="flex items-center justify-between gap-4">
                   <div>
                     <p className="text-sm font-bold text-slate-300">Diagnosis preview</p>
-                    <p className="mt-2 text-5xl font-black text-nexore-text">68</p>
+                    <p className="mt-2 text-5xl font-black text-nexora-text">68</p>
                   </div>
-                  <span className="rounded-xl bg-nexore-accent px-3 py-2 text-sm font-black text-slate-950">
+                  <span className="rounded-xl bg-nexora-accent px-3 py-2 text-sm font-black text-slate-950">
                     Intermediate
                   </span>
                 </div>
@@ -85,7 +85,7 @@ export default function LandingPage() {
                       </div>
                       <div className="h-2 rounded-full bg-slate-700">
                         <div
-                          className="h-2 rounded-full bg-nexore-accent"
+                          className="h-2 rounded-full bg-nexora-accent"
                           style={{ width: `${[74, 58, 42][index]}%` }}
                         />
                       </div>
@@ -104,10 +104,10 @@ export default function LandingPage() {
               return (
                 <Link key={action.label} href={action.href} className="focus-ring rounded-xl">
                   <Card className="h-full p-4 text-center">
-                    <span className="mx-auto grid h-12 w-12 place-items-center rounded-xl bg-nexore-primary/22 text-nexore-accent">
+                    <span className="mx-auto grid h-12 w-12 place-items-center rounded-xl bg-nexora-primary/22 text-nexora-accent">
                       <Icon className="h-6 w-6" />
                     </span>
-                    <p className="mt-3 text-sm font-black text-nexore-text">{action.label}</p>
+                    <p className="mt-3 text-sm font-black text-nexora-text">{action.label}</p>
                   </Card>
                 </Link>
               );
@@ -121,19 +121,19 @@ export default function LandingPage() {
         <section className="px-5 py-12 sm:py-16">
           <div className="mx-auto grid max-w-6xl gap-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexore-primary">Why Nexore</p>
-              <h2 className="mt-2 text-3xl font-black text-nexore-text">Stop practicing without a signal.</h2>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexora-primary">Why Nexora</p>
+              <h2 className="mt-2 text-3xl font-black text-nexora-text">Stop practicing without a signal.</h2>
             </div>
             <Card className="p-6">
               <div className="grid gap-3 sm:grid-cols-3">
                 {problems.map((problem) => (
                   <div key={problem} className="rounded-xl bg-slate-950/32 p-4">
-                    <p className="text-sm font-black text-nexore-text">{problem}</p>
+                    <p className="text-sm font-black text-nexora-text">{problem}</p>
                   </div>
                 ))}
               </div>
               <p className="mt-5 text-base font-semibold leading-7 text-slate-300">
-                Nexore solves this with structured diagnosis, a clear roadmap, and mentor recommendations built around
+                Nexora solves this with structured diagnosis, a clear roadmap, and mentor recommendations built around
                 your gaps.
               </p>
             </Card>
@@ -141,14 +141,14 @@ export default function LandingPage() {
         </section>
 
         <section className="px-5 pb-20 pt-6">
-          <div className="mx-auto max-w-6xl rounded-xl border border-nexore-accent/30 bg-gradient-to-r from-nexore-card via-nexore-primary/28 to-nexore-accent/20 p-7 shadow-soft sm:p-10">
-            <h2 className="text-3xl font-black text-nexore-text">Stop guessing. Start knowing.</h2>
+          <div className="mx-auto max-w-6xl rounded-xl border border-nexora-accent/30 bg-gradient-to-r from-nexora-card via-nexora-primary/28 to-nexora-accent/20 p-7 shadow-soft sm:p-10">
+            <h2 className="text-3xl font-black text-nexora-text">Stop guessing. Start knowing.</h2>
             <p className="mt-3 max-w-2xl text-slate-300">
               Start with a free diagnosis and leave with a focused plan in minutes.
             </p>
             <Link
               href="/diagnosis/start"
-              className="focus-ring mt-6 inline-flex rounded-xl bg-nexore-accent px-6 py-3 font-black text-slate-950 hover:-translate-y-0.5 hover:bg-nexore-secondary"
+              className="focus-ring mt-6 inline-flex rounded-xl bg-nexora-accent px-6 py-3 font-black text-slate-950 hover:-translate-y-0.5 hover:bg-nexora-secondary"
             >
               Start Diagnosis
             </Link>

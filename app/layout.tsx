@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nexore | Know your gaps. Own your path.",
+  title: "Nexora | Know your gaps. Own your path.",
   description: "Free AI-powered skill diagnosis and personalized two-week roadmap for students.",
 };
 

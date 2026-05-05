@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        nexore: {
+        nexora: {
           primary: "#6A89A7",
           secondary: "#BDDDFC",
           accent: "#88BDF2",

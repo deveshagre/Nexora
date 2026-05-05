@@ -55,8 +55,8 @@ export function QuestionFlow() {
   if (!goal || !activeQuestion) {
     return (
       <main className="grid min-h-screen place-items-center px-5">
-        <div className="rounded-xl border border-white/10 bg-nexore-card p-6 text-center shadow-soft">
-          <p className="font-black text-nexore-text">Loading diagnosis...</p>
+        <div className="rounded-xl border border-white/10 bg-nexora-card p-6 text-center shadow-soft">
+          <p className="font-black text-nexora-text">Loading diagnosis...</p>
         </div>
       </main>
     );
@@ -66,10 +66,10 @@ export function QuestionFlow() {
     <main className="min-h-screen px-5 py-6">
       <div className="mx-auto max-w-4xl">
         <div className="flex items-center justify-between gap-4">
-          <Link href="/" className="focus-ring rounded-md text-lg font-black text-nexore-text">
-            Nexore
+          <Link href="/" className="focus-ring rounded-md text-lg font-black text-nexora-text">
+            Nexora
           </Link>
-          <span className="rounded-xl border border-white/10 bg-nexore-card px-3 py-2 text-sm font-bold text-nexore-text shadow-sm">
+          <span className="rounded-xl border border-white/10 bg-nexora-card px-3 py-2 text-sm font-bold text-nexora-text shadow-sm">
             {goalLabels[goal.goal]}
             {goal.careerTrack ? `: ${goal.careerTrack}` : ""}
           </span>
@@ -78,25 +78,25 @@ export function QuestionFlow() {
         <section className="pt-10">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexore-primary">Step 2 of 3</p>
-              <h1 className="mt-3 text-4xl font-black text-nexore-text">Diagnosis questions</h1>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-nexora-primary">Step 2 of 3</p>
+              <h1 className="mt-3 text-4xl font-black text-nexora-text">Diagnosis questions</h1>
             </div>
-            <p className="text-sm font-black text-nexore-primary">{progress}% complete</p>
+            <p className="text-sm font-black text-nexora-primary">{progress}% complete</p>
           </div>
 
           <div className="mt-6 h-3 overflow-hidden rounded-full bg-slate-800">
-            <div className="h-full rounded-full bg-nexore-accent transition-all duration-300" style={{ width: `${progress}%` }} />
+            <div className="h-full rounded-full bg-nexora-accent transition-all duration-300" style={{ width: `${progress}%` }} />
           </div>
 
-          <article className="mt-8 rounded-xl border border-white/10 bg-nexore-card/88 p-6 shadow-soft transition sm:p-8">
+          <article className="mt-8 rounded-xl border border-white/10 bg-nexora-card/88 p-6 shadow-soft transition sm:p-8">
             <div className="flex flex-wrap items-center justify-between gap-3">
-              <span className="rounded-xl bg-nexore-primary/24 px-3 py-2 text-sm font-black text-nexore-text">
+              <span className="rounded-xl bg-nexora-primary/24 px-3 py-2 text-sm font-black text-nexora-text">
                 Question {activeIndex + 1} of {questions.length}
               </span>
-              <span className="text-sm font-bold text-nexore-primary">{activeQuestion.category}</span>
+              <span className="text-sm font-bold text-nexora-primary">{activeQuestion.category}</span>
             </div>
 
-            <h2 className="mt-6 text-2xl font-black leading-9 text-nexore-text">{activeQuestion.prompt}</h2>
+            <h2 className="mt-6 text-2xl font-black leading-9 text-nexora-text">{activeQuestion.prompt}</h2>
 
             {activeQuestion.type === "mcq" ? (
               <div className="mt-6 grid gap-3">
@@ -109,8 +109,8 @@ export function QuestionFlow() {
                       onClick={() => updateAnswer(option.id)}
                       className={`focus-ring rounded-xl border px-5 py-4 text-left font-bold ${
                         selected
-                          ? "border-nexore-accent bg-nexore-primary/28 text-nexore-text"
-                          : "border-white/10 bg-slate-950/24 text-slate-300 hover:-translate-y-0.5 hover:border-nexore-accent/55"
+                          ? "border-nexora-accent bg-nexora-primary/28 text-nexora-text"
+                          : "border-white/10 bg-slate-950/24 text-slate-300 hover:-translate-y-0.5 hover:border-nexora-accent/55"
                       }`}
                     >
                       {option.label}
@@ -130,8 +130,8 @@ export function QuestionFlow() {
                         onClick={() => updateAnswer(rating)}
                         className={`focus-ring aspect-square rounded-xl border text-xl font-black ${
                           selected
-                            ? "border-nexore-accent bg-nexore-primary/28 text-nexore-text"
-                            : "border-white/10 bg-slate-950/24 text-slate-300 hover:-translate-y-0.5 hover:border-nexore-accent/55"
+                            ? "border-nexora-accent bg-nexora-primary/28 text-nexora-text"
+                            : "border-white/10 bg-slate-950/24 text-slate-300 hover:-translate-y-0.5 hover:border-nexora-accent/55"
                         }`}
                         aria-label={`Rate ${rating} out of 5`}
                       >
@@ -153,7 +153,7 @@ export function QuestionFlow() {
               type="button"
               onClick={() => setActiveIndex((index) => Math.max(0, index - 1))}
               disabled={activeIndex === 0}
-              className="focus-ring rounded-xl border border-white/10 bg-white/8 px-5 py-3 font-black text-nexore-text disabled:cursor-not-allowed disabled:opacity-45"
+              className="focus-ring rounded-xl border border-white/10 bg-white/8 px-5 py-3 font-black text-nexora-text disabled:cursor-not-allowed disabled:opacity-45"
             >
               Back
             </button>
@@ -161,7 +161,7 @@ export function QuestionFlow() {
               type="button"
               onClick={() => (isLast ? submitDiagnosis() : setActiveIndex((index) => index + 1))}
               disabled={!canContinue}
-              className="focus-ring rounded-xl bg-nexore-accent px-6 py-3 font-black text-slate-950 shadow-soft hover:-translate-y-0.5 hover:bg-nexore-secondary disabled:cursor-not-allowed disabled:opacity-45"
+              className="focus-ring rounded-xl bg-nexora-accent px-6 py-3 font-black text-slate-950 shadow-soft hover:-translate-y-0.5 hover:bg-nexora-secondary disabled:cursor-not-allowed disabled:opacity-45"
             >
               {isLast ? "Generate Report" : "Next Question"}
             </button>

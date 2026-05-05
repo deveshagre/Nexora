@@ -9,9 +9,9 @@ type AnchorButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 };
 
 const variants = {
-  primary: "bg-nexore-accent text-slate-950 shadow-[0_14px_32px_rgba(136,189,242,0.24)] hover:bg-[#BDDDFC]",
-  secondary: "border border-white/10 bg-white/8 text-nexore-text hover:border-nexore-accent/55 hover:bg-white/12",
-  ghost: "text-nexore-text hover:bg-white/8",
+  primary: "bg-nexora-accent text-slate-950 shadow-[0_14px_32px_rgba(136,189,242,0.24)] hover:bg-[#BDDDFC]",
+  secondary: "border border-white/10 bg-white/8 text-nexora-text hover:border-nexora-accent/55 hover:bg-white/12",
+  ghost: "text-nexora-text hover:bg-white/8",
 };
 
 const base =
