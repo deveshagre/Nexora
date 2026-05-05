@@ -8,7 +8,7 @@ export function Logo() {
         src="/header-logo.png" 
         alt="Nexora Logo" 
         width={140} 
-        height={78} 
+        height={50} 
         className="object-contain" 
         priority 
       />
